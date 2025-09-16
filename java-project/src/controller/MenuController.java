@@ -17,10 +17,11 @@ public class MenuController {
 			menuText.append("\n====================================\n");
 			menuText.append("Selecione uma opção:\n");
 			menuText.append("[1] Total de vendas por categoria\n");
-			menuText.append("[2] Top 5 produtos mais vendidos\n");
-			menuText.append("[3] Valor médio por vendedor\n");
-			menuText.append("[4] Valor total por vendedor\n");
-			menuText.append("[5] Sair.\n");
+			menuText.append("[2] Total de vendas por região\n");
+			menuText.append("[3] Top 5 produtos mais vendidos\n");
+			menuText.append("[4] Valor médio por vendedor\n");
+			menuText.append("[5] Valor total por vendedor\n");
+			menuText.append("[0] Sair.\n");
 			menuText.append("\nResposta: ");
 
 			System.out.print(menuText.toString());
@@ -32,14 +33,15 @@ public class MenuController {
 
 			switch (choice) {
 			case 1 -> SalesAnalysisController.displayTotalSalesByCategory(salesList);
-			case 2 -> SalesAnalysisController.displayTop5BestSellingProducts(salesList);
-			case 3 -> SalesAnalysisController.displayAverageValuePerSeller(salesList);
-			case 4 -> SalesAnalysisController.displayTotalValuePerSeller(salesList);
-			case 5 -> System.out.println("Programa encerrado.");
+			case 2 -> SalesAnalysisController.displayTotalSalesByRegion(salesList);
+			case 3 -> SalesAnalysisController.displayTop5BestSellingProducts(salesList);
+			case 4 -> SalesAnalysisController.displayAverageValuePerSeller(salesList);
+			case 5 -> SalesAnalysisController.displayTotalValuePerSeller(salesList);
+			case 0 -> System.out.println("Programa encerrado.");
 			default -> System.out.println("Opção inválida!");
 			}
 
-		} while (choice != 5);
+		} while (choice != 0);
 		
 	}
 

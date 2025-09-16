@@ -36,6 +36,19 @@ public class SalesAnalysisService {
 		return totalSalesByCategory;	 
 	}
 	
+	public static Map<String, Long> getTotalSalesByRegion (List<Sale> salesList) {
+		
+		Map<String, Long>  totalSalesByRegion = salesList.stream()
+			.collect(Collectors.groupingBy(
+					Sale::getRegion,
+					Collectors.counting()
+					));
+		
+		totalSalesByRegion = sortMapByValue(totalSalesByRegion, (s1, s2) -> s2.getValue().compareTo(s1.getValue()));
+		
+		return totalSalesByRegion;
+	}
+	
 	public static Map<String, Integer> getTop5BestSellingProducts (List<Sale> salesList) {
 		
 		Map<String, Integer> quantityOfEachProduct = salesList.stream()

@@ -20,11 +20,18 @@ public class SalesAnalysisController {
 		
 	}
 
-	public static void displayTotalSalesByCategory(List<Sale> salesList) {
+	public static void displayTotalSalesByCategory (List<Sale> salesList) {
 
 		Map<String, Long> totalSalesByCategory =  SalesAnalysisService.getTotalSalesByCategory(salesList);
 		
 		displayMap(totalSalesByCategory, "Total de vendas por categoria:\n", "%s: %d%n");
+	}
+	
+	public static void displayTotalSalesByRegion (List<Sale> salesList) {
+
+		Map<String, Long> totalSalesByRegion =  SalesAnalysisService.getTotalSalesByRegion(salesList);
+		
+		displayMap(totalSalesByRegion, "Total de vendas por região:\n", "%s: %d%n");
 	}
 
 	public static void displayTop5BestSellingProducts (List<Sale> salesList) {
@@ -39,7 +46,7 @@ public class SalesAnalysisController {
 		
 		Map<String, Double> averageValuePerSelling = SalesAnalysisService.getAverageValuePerSeller(salesList);
 		
-		displayMap(averageValuePerSelling, "Média de valor por vendedor:\n", "%s: R$ %.2f%n");
+		displayMap(averageValuePerSelling, "Valor médio por vendedor:\n", "%s: R$ %.2f%n");
 		
 	}
 	
@@ -47,7 +54,7 @@ public class SalesAnalysisController {
 		
 		Map<String, Double> totalValuePerSelling = SalesAnalysisService.getTotalValuePerSeller(salesList);
 		
-		displayMap(totalValuePerSelling, "Média de valor por vendedor:\n", "%s: R$ %.2f%n");
+		displayMap(totalValuePerSelling, "Valor total por vendedor:\n", "%s: R$ %.2f%n");
 		
 	}
 	
