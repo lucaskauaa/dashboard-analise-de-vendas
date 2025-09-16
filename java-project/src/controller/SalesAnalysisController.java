@@ -7,44 +7,48 @@ import model.Sale;
 import service.SalesAnalysisService;
 
 public class SalesAnalysisController {
-
-	public static void displayTotalSalesByCategory(List<Sale> salesList) {
-
-		Map<String, Long> map =  SalesAnalysisService.getTotalSalesByCategory(salesList);
-				
+	
+	private static <K, V> void displayMap (Map<K, V> map, String text01, String text02) {
+		
 		if (map.isEmpty()) {
 			System.out.println("Lista vazia!");
 			
 		} else {
-			System.out.println("Total de vendas por categoria:\n");
-			map.forEach((k, v) -> System.out.println(k + ": " + v)) ;
+			System.out.println(text01);
+			map.forEach((k, v) -> System.out.printf(text02, k, v)) ;
 		}
-				
+		
+	}
+
+	public static void displayTotalSalesByCategory(List<Sale> salesList) {
+
+		Map<String, Long> totalSalesByCategory =  SalesAnalysisService.getTotalSalesByCategory(salesList);
+		
+		displayMap(totalSalesByCategory, "Total de vendas por categoria:\n", "%s: %d%n");
 	}
 
 	public static void displayTop5BestSellingProducts (List<Sale> salesList) {
 		
-		Map<String, Integer> map = SalesAnalysisService.getTop5BestSellingProducts(salesList);
+		Map<String, Integer> bestSellingProducts = SalesAnalysisService.getTop5BestSellingProducts(salesList);
 		
-		if (map.isEmpty()) {
-			System.out.println("Lista vazia!");
-			
-		} else {
-			System.out.println("Top 5 produtos mais vendidos:\n");
-			map.forEach((k, v) -> System.out.println(k + ": " + v)) ;
-		}
+		displayMap(bestSellingProducts, "Top 5 produtos mais vendidos:\n", "%s: %d%n");
+		
 	}
 	
 	public static void displayAverageValuePerSeller (List<Sale> salesList) {
-		Map<String, Double> map = SalesAnalysisService.getAverageValuePerSeller(salesList);
 		
-		if (map.isEmpty()) {
-			System.out.println("Lista vazia!");
-			
-		} else {
-			System.out.println("Média de valor por vendedor:\n");
-			map.forEach((k, v) -> System.out.printf("%s: R$ %.2f%n", k, v));
-		}
+		Map<String, Double> averageValuePerSelling = SalesAnalysisService.getAverageValuePerSeller(salesList);
+		
+		displayMap(averageValuePerSelling, "Média de valor por vendedor:\n", "%s: R$ %.2f%n");
+		
+	}
+	
+	public static void displayTotalValuePerSeller (List<Sale> salesList) {
+		
+		Map<String, Double> totalValuePerSelling = SalesAnalysisService.getTotalValuePerSeller(salesList);
+		
+		displayMap(totalValuePerSelling, "Média de valor por vendedor:\n", "%s: R$ %.2f%n");
+		
 	}
 	
 }

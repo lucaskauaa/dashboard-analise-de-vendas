@@ -1,100 +1,100 @@
-1,Notebook Dell,Eletrônicos,4899.90,2,2024-01-15,Ana Silva,Sudeste
-2,iPhone 14,Eletrônicos,3999.00,1,2024-01-15,Carlos Souza,Sudeste
-3,Mesa Escritório,Móveis,899.90,1,2024-01-16,João Santos,Sul
-4,Cadeira Gamer,Móveis,1299.90,3,2024-01-16,Maria Oliveira,Sudeste
-5,Livro Java Prog.,Livros,89.90,5,2024-01-17,Pedro Costa,Nordeste
-6,Monitor 24",Eletrônicos,799.90,2,2024-01-17,Ana Silva,Sudeste
-7,Teclado Mecânico,Eletrônicos,299.90,4,2024-01-18,Carlos Souza,Sudeste
-8,Impressora Laser,Eletrônicos,1899.90,1,2024-01-18,João Santos,Sul
-9,Headphone Bluetooth,Eletrônicos,499.90,3,2024-01-19,Maria Oliveira,Sudeste
-10,Webcam HD,Eletrônicos,199.90,6,2024-01-19,Pedro Costa,Nordeste
-11,Estante Madeira,Móveis,459.90,2,2024-01-20,Ana Silva,Sudeste
-12,Sofá 3 Lugares,Móveis,2899.90,1,2024-01-20,Carlos Souza,Sudeste
-13,Cama Queen Size,Móveis,1899.90,1,2024-01-21,João Santos,Sul
-14,Guarda-Roupa,Móveis,999.90,1,2024-01-21,Maria Oliveira,Sudeste
-15,Livro Python Prog.,Livros,79.90,4,2024-01-22,Pedro Costa,Nordeste
-16,Tablet Samsung,Eletrônicos,1299.90,2,2024-01-22,Ana Silva,Sudeste
-17,Smart TV 55",Eletrônicos,2899.90,1,2024-01-23,Carlos Souza,Sudeste
-18,Videogame PS5,Eletrônicos,4499.90,1,2024-01-23,João Santos,Sul
-19,Fone de Ouvido,Eletrônicos,199.90,5,2024-01-24,Maria Oliveira,Sudeste
-20,Mouse Gamer,Eletrônicos,159.90,8,2024-01-24,Pedro Costa,Nordeste
-21,Cafeteira Elétrica,Eletrodomésticos,299.90,3,2024-01-25,Ana Silva,Sudeste
-22,Liquidificador,Eletrodomésticos,189.90,4,2024-01-25,Carlos Souza,Sudeste
-23,Microwave,Eletrodomésticos,599.90,2,2024-01-26,João Santos,Sul
-24,Geladeira Frost Free,Eletrodomésticos,2899.90,1,2024-01-26,Maria Oliveira,Sudeste
-25,Lavadora de Roupas,Eletrodomésticos,1899.90,1,2024-01-27,Pedro Costa,Nordeste
-26,Livro Spring Boot,Livros,99.90,3,2024-01-27,Ana Silva,Sudeste
-27,Cadeira Escritório,Móveis,399.90,6,2024-01-28,Carlos Souza,Sudeste
-28,Notebook Lenovo,Eletrônicos,3599.90,2,2024-01-28,João Santos,Sul
-29,Smartphone Samsung,Eletrônicos,1999.90,3,2024-01-29,Maria Oliveira,Sudeste
-30,Tablet Apple,Eletrônicos,2299.90,1,2024-01-29,Pedro Costa,Nordeste
-31,Armário Cozinha,Móveis,799.90,2,2024-01-30,Ana Silva,Sudeste
-32,Fogão 4 Bocas,Eletrodomésticos,899.90,1,2024-01-30,Carlos Souza,Sudeste
-33,Ventilador Turbo,Eletrodomésticos,199.90,7,2024-01-31,João Santos,Sul
-34,Ar Condicionado,Eletrodomésticos,1899.90,1,2024-01-31,Maria Oliveira,Sudeste
-35,Livro Docker,Livros,69.90,6,2024-02-01,Pedro Costa,Nordeste
-36,Monitor Curvo 27",Eletrônicos,1299.90,2,2024-02-01,Ana Silva,Sudeste
-37,Teclado sem Fio,Eletrônicos,159.90,9,2024-02-02,Carlos Souza,Sudeste
-38,Impressora Jato Tinta,Eletrônicos,499.90,3,2024-02-02,João Santos,Sul
-39,Caixa de Som Bluetooth,Eletrônicos,299.90,5,2024-02-03,Maria Oliveira,Sudeste
-40,HD Externo 1TB,Eletrônicos,399.90,4,2024-02-03,Pedro Costa,Nordeste
-41,Rack TV,Móveis,599.90,2,2024-02-04,Ana Silva,Sudeste
-42,Cama Solteiro,Móveis,699.90,3,2024-02-04,Carlos Souza,Sudeste
-43,Mesa de Jantar,Móveis,1299.90,1,2024-02-05,João Santos,Sul
-44,Bicicleta Ergométrica,Esportes,1899.90,1,2024-02-05,Maria Oliveira,Sudeste
-45,Livro React,Livros,89.90,4,2024-02-06,Pedro Costa,Nordeste
-46,Notebook Acer,Eletrônicos,2999.90,2,2024-02-06,Ana Silva,Sudeste
-47,Smart TV 32",Eletrônicos,999.90,3,2024-02-07,Carlos Souza,Sudeste
-48,Videogame Xbox,Eletrônicos,3499.90,1,2024-02-07,João Santos,Sul
-49,Fone Bluetooth,Eletrônicos,349.90,6,2024-02-08,Maria Oliveira,Sudeste
-50,Mouse Sem Fio,Eletrônicos,129.90,10,2024-02-08,Pedro Costa,Nordeste
-51,Bicicleta Ergométrica,Esportes,1899.90,3,2024-02-05,Ana Silva,Sudeste
-52,Cadeira Gamer,Móveis,1299.90,1,2024-01-16,Ana Silva,Sudeste
-53,Mesa de Jantar,Móveis,1299.90,3,2024-02-05,Ana Silva,Sul
-54,Rack TV,Móveis,599.90,1,2024-02-04,Ana Silva,Sudeste
-55,Bicicleta Ergométrica,Esportes,1899.90,9,2024-02-05,Ana Silva,Sudeste
-56,Caixa de Som Bluetooth,Eletrônicos,299.90,4,2024-02-03,Ana Silva,Sudeste
-57,Liquidificador,Eletrodomésticos,189.90,6,2024-01-25,Ana Silva,Sudeste
-58,Notebook Dell,Eletrônicos,4899.90,10,2024-01-15,Ana Silva,Sudeste
-59,Mesa de Jantar,Móveis,1299.90,10,2024-02-05,Ana Silva,Sul
-60,Microwave,Eletrodomésticos,599.90,5,2024-01-26,Ana Silva,Sul
-61,Geladeira Frost Free,Eletrodomésticos,2899.90,7,2024-01-26,Carlos Souza,Sudeste
-62,Livro React,Livros,89.90,3,2024-02-06,Carlos Souza,Nordeste
-63,Monitor Curvo 27",Eletrônicos,1299.90,1,2024-02-01,Carlos Souza,Sudeste
-64,Fone Bluetooth,Eletrônicos,349.90,2,2024-02-08,Carlos Souza,Sudeste
-65,Impressora Jato Tinta,Eletrônicos,499.90,9,2024-02-02,Carlos Souza,Sul
-66,Cama Solteiro,Móveis,699.90,4,2024-02-04,Carlos Souza,Sudeste
-67,Cadeira Escritório,Móveis,399.90,2,2024-01-28,Carlos Souza,Sudeste
-68,Guarda-Roupa,Móveis,999.90,7,2024-01-21,Carlos Souza,Sudeste
-69,Notebook Lenovo,Eletrônicos,3599.90,7,2024-01-28,Carlos Souza,Sul
-70,Tablet Samsung,Eletrônicos,1299.90,6,2024-01-22,Carlos Souza,Sudeste
-71,Geladeira Frost Free,Eletrodomésticos,2899.90,9,2024-01-26,João Santos,Sudeste
-72,Impressora Jato Tinta,Eletrônicos,499.90,5,2024-02-02,João Santos,Sul
-73,Cadeira Escritório,Móveis,399.90,3,2024-01-28,João Santos,Sudeste
-74,Monitor Curvo 27",Eletrônicos,1299.90,3,2024-02-01,João Santos,Sudeste
-75,Lavadora de Roupas,Eletrodomésticos,1899.90,8,2024-01-27,João Santos,Nordeste
-76,Monitor 24",Eletrônicos,799.90,7,2024-01-17,João Santos,Sudeste
-77,Fogão 4 Bocas,Eletrodomésticos,899.90,4,2024-01-30,João Santos,Sudeste
-78,Geladeira Frost Free,Eletrodomésticos,2899.90,7,2024-01-26,João Santos,Sudeste
-79,Headphone Bluetooth,Eletrônicos,499.90,5,2024-01-19,João Santos,Sudeste
-80,Monitor Curvo 27",Eletrônicos,1299.90,4,2024-02-01,João Santos,Sudeste
-81,Caixa de Som Bluetooth,Eletrônicos,299.90,10,2024-02-03,Maria Oliveira,Sudeste
-82,Impressora Laser,Eletrônicos,1899.90,4,2024-01-18,Maria Oliveira,Sul
-83,Tablet Apple,Eletrônicos,2299.90,4,2024-01-29,Maria Oliveira,Nordeste
-84,Livro React,Livros,89.90,7,2024-02-06,Maria Oliveira,Nordeste
-85,Cadeira Escritório,Móveis,399.90,6,2024-01-28,Maria Oliveira,Sudeste
-86,Ar Condicionado,Eletrodomésticos,1899.90,5,2024-01-31,Maria Oliveira,Sudeste
-87,Cafeteira Elétrica,Eletrodomésticos,299.90,6,2024-01-25,Maria Oliveira,Sudeste
-88,Headphone Bluetooth,Eletrônicos,499.90,6,2024-01-19,Maria Oliveira,Sudeste
-89,Cama Solteiro,Móveis,699.90,2,2024-02-04,Maria Oliveira,Sudeste
-90,Teclado sem Fio,Eletrônicos,159.90,2,2024-02-02,Maria Oliveira,Sudeste
-91,Notebook Dell,Eletrônicos,4899.90,8,2024-01-15,Pedro Costa,Sudeste
-92,Livro Java Prog.,Livros,89.90,5,2024-01-17,Pedro Costa,Nordeste
-93,Armário Cozinha,Móveis,799.90,10,2024-01-30,Pedro Costa,Sudeste
-94,Caixa de Som Bluetooth,Eletrônicos,299.90,3,2024-02-03,Pedro Costa,Sudeste
-95,Cadeira Escritório,Móveis,399.90,2,2024-01-28,Pedro Costa,Sudeste
-96,Bicicleta Ergométrica,Esportes,1899.90,1,2024-02-05,Pedro Costa,Sudeste
-97,Mesa Escritório,Móveis,899.90,1,2024-01-16,Pedro Costa,Sul
-98,Fone Bluetooth,Eletrônicos,349.90,4,2024-02-08,Pedro Costa,Sudeste
-99,Cadeira Escritório,Móveis,399.90,7,2024-01-28,Pedro Costa,Sudeste
-100,HD Externo 1TB,Eletrônicos,399.90,6,2024-02-03,Pedro Costa,Nordeste
+1,Smartphone Pro,Eletrônicos,2500.00,1,2023-01-15,João Silva,Sudeste
+2,Notebook Ultra,Eletrônicos,5500.50,1,2023-01-18,Maria Oliveira,Sul
+3,Mouse sem fio,Acessórios,120.00,2,2023-01-20,Pedro Costa,Nordeste
+4,Teclado mecânico,Acessórios,350.75,1,2023-02-05,Ana Souza,Centro-Oeste
+5,Fone Bluetooth,Eletrônicos,450.00,3,2023-02-10,João Silva,Sudeste
+6,Monitor 4K,Eletrônicos,1800.00,1,2023-02-12,Maria Oliveira,Sul
+7,Mochila executiva,Acessórios,150.00,1,2023-03-01,Pedro Costa,Norte
+8,Carregador Portátil,Acessórios,90.00,5,2023-03-05,Ana Souza,Sudeste
+9,Câmera Digital,Eletrônicos,1200.00,1,2023-03-10,João Silva,Nordeste
+10,Smart TV 55",Eletrônicos,3800.00,1,2023-04-20,Maria Oliveira,Sul
+11,Livro de Marketing,Livros,50.00,2,2023-04-22,Pedro Costa,Norte
+12,Headset Gamer,Acessórios,220.00,1,2023-05-01,Ana Souza,Centro-Oeste
+13,SSD 1TB,Eletrônicos,600.00,1,2023-05-05,João Silva,Sudeste
+14,Cadeira de escritório,Móveis,850.00,1,2023-05-15,Maria Oliveira,Norte
+15,Mesa de jantar,Móveis,1500.00,1,2023-06-01,Pedro Costa,Sudeste
+16,Webcam Full HD,Acessórios,280.00,1,2023-06-10,Ana Souza,Sul
+17,Caixa de som,Eletrônicos,190.00,2,2023-06-15,João Silva,Nordeste
+18,Impressora Multifuncional,Eletrônicos,950.00,1,2023-07-01,Maria Oliveira,Centro-Oeste
+19,Livro de Culinária,Livros,45.00,3,2023-07-05,Pedro Costa,Norte
+20,Geladeira Frost Free,Eletrodomésticos,3200.00,1,2023-07-10,Ana Souza,Sudeste
+21,Micro-ondas,Eletrodomésticos,450.00,1,2023-08-01,João Silva,Sul
+22,Liquidificador,Eletrodomésticos,180.00,1,2023-08-05,Maria Oliveira,Sudeste
+23,Ventilador,Eletrodomésticos,110.00,2,2023-08-10,Pedro Costa,Nordeste
+24,Bicicleta de Montanha,Esportes,1100.00,1,2023-09-01,Ana Souza,Sul
+25,Tênis de corrida,Esportes,250.00,1,2023-09-10,João Silva,Centro-Oeste
+26,Halteres,Esportes,80.00,2,2023-09-15,Maria Oliveira,Sudeste
+27,Kit Ferramentas,Casa e Jardim,200.00,1,2023-10-01,Pedro Costa,Norte
+28,Furadeira,Casa e Jardim,300.00,1,2023-10-05,Ana Souza,Sudeste
+29,Cabo de rede 10m,Acessórios,30.00,5,2023-10-10,João Silva,Sul
+30,Tablet,Eletrônicos,900.00,1,2023-11-01,Maria Oliveira,Nordeste
+31,Livro de ficção,Livros,60.00,1,2023-11-05,Pedro Costa,Centro-Oeste
+32,Guitarra Elétrica,Música,1500.00,1,2023-11-10,Ana Souza,Sudeste
+33,Amplificador de guitarra,Música,700.00,1,2023-12-01,João Silva,Sul
+34,Smartphone Pro,Eletrônicos,2500.00,1,2023-12-05,Maria Oliveira,Sudeste
+35,Notebook Ultra,Eletrônicos,5500.50,1,2023-12-10,Pedro Costa,Nordeste
+36,Mouse sem fio,Acessórios,120.00,3,2024-01-02,Ana Souza,Norte
+37,Teclado mecânico,Acessórios,350.75,1,2024-01-10,João Silva,Centro-Oeste
+38,Fone Bluetooth,Eletrônicos,450.00,2,2024-01-15,Maria Oliveira,Sudeste
+39,Monitor 4K,Eletrônicos,1800.00,1,2024-02-01,Pedro Costa,Sul
+40,Mochila executiva,Acessórios,150.00,1,2024-02-05,Ana Souza,Nordeste
+41,Carregador Portátil,Acessórios,90.00,4,2024-02-10,João Silva,Norte
+42,Câmera Digital,Eletrônicos,1200.00,1,2024-03-01,Maria Oliveira,Sudeste
+43,Smart TV 55",Eletrônicos,3800.00,1,2024-03-05,Pedro Costa,Sul
+44,Livro de Marketing,Livros,50.00,1,2024-03-10,Ana Souza,Centro-Oeste
+45,Headset Gamer,Acessórios,220.00,1,2024-04-01,João Silva,Sudeste
+46,SSD 1TB,Eletrônicos,600.00,2,2024-04-05,Maria Oliveira,Nordeste
+47,Cadeira de escritório,Móveis,850.00,1,2024-04-10,Pedro Costa,Sul
+48,Mesa de jantar,Móveis,1500.00,1,2024-05-01,Ana Souza,Norte
+49,Webcam Full HD,Acessórios,280.00,1,2024-05-05,João Silva,Sudeste
+50,Caixa de som,Eletrônicos,190.00,3,2024-05-10,Maria Oliveira,Centro-Oeste
+51,Impressora Multifuncional,Eletrônicos,950.00,1,2024-06-01,Pedro Costa,Sudeste
+52,Livro de Culinária,Livros,45.00,2,2024-06-05,Ana Souza,Sul
+53,Geladeira Frost Free,Eletrodomésticos,3200.00,1,2024-06-10,João Silva,Nordeste
+54,Micro-ondas,Eletrodomésticos,450.00,1,2024-07-01,Maria Oliveira,Norte
+55,Ventilador,Eletrodomésticos,110.00,1,2024-07-05,Pedro Costa,Sudeste
+56,Bicicleta de Montanha,Esportes,1100.00,1,2024-07-10,Ana Souza,Centro-Oeste
+57,Tênis de corrida,Esportes,250.00,1,2024-08-01,João Silva,Sul
+58,Halteres,Esportes,80.00,3,2024-08-05,Maria Oliveira,Nordeste
+59,Kit Ferramentas,Casa e Jardim,200.00,1,2024-08-10,Pedro Costa,Norte
+60,Furadeira,Casa e Jardim,300.00,1,2024-09-01,Ana Souza,Sudeste
+61,Cabo de rede 10m,Acessórios,30.00,10,2024-09-05,João Silva,Sul
+62,Tablet,Eletrônicos,900.00,1,2024-09-10,Maria Oliveira,Centro-Oeste
+63,Livro de ficção,Livros,60.00,2,2024-10-01,Pedro Costa,Sudeste
+64,Guitarra Elétrica,Música,1500.00,1,2024-10-05,Ana Souza,Nordeste
+65,Amplificador de guitarra,Música,700.00,1,2024-10-10,João Silva,Norte
+66,Smartwatch,Eletrônicos,800.00,1,2024-11-01,Maria Oliveira,Sudeste
+67,Drone,Eletrônicos,1500.00,1,2024-11-05,Pedro Costa,Sul
+68,Kit de Pintura,Hobbies,95.00,1,2024-11-10,Ana Souza,Centro-Oeste
+69,Violão Acústico,Música,600.00,1,2024-12-01,João Silva,Sudeste
+70,Cabo HDMI,Acessórios,40.00,2,2024-12-05,Maria Oliveira,Nordeste
+71,Livro Infantil,Livros,35.00,4,2024-12-10,Pedro Costa,Norte
+72,Smartphone Pro,Eletrônicos,2500.00,1,2023-03-20,João Silva,Sudeste
+73,Notebook Ultra,Eletrônicos,5500.50,1,2023-04-01,Maria Oliveira,Sul
+74,Mouse sem fio,Acessórios,120.00,1,2023-04-15,Pedro Costa,Nordeste
+75,Teclado mecânico,Acessórios,350.75,2,2023-05-10,Ana Souza,Centro-Oeste
+76,Fone Bluetooth,Eletrônicos,450.00,1,2023-06-05,João Silva,Sudeste
+77,Monitor 4K,Eletrônicos,1800.00,1,2023-07-01,Maria Oliveira,Sul
+78,Mochila executiva,Acessórios,150.00,1,2023-08-20,Pedro Costa,Norte
+79,Carregador Portátil,Acessórios,90.00,3,2023-09-01,Ana Souza,Sudeste
+80,Câmera Digital,Eletrônicos,1200.00,1,2023-10-10,João Silva,Nordeste
+81,Smart TV 55",Eletrônicos,3800.00,1,2023-11-01,Maria Oliveira,Sul
+82,Livro de Marketing,Livros,50.00,1,2023-12-25,Pedro Costa,Norte
+83,Headset Gamer,Acessórios,220.00,1,2024-01-20,Ana Souza,Centro-Oeste
+84,SSD 1TB,Eletrônicos,600.00,1,2024-02-15,João Silva,Sudeste
+85,Cadeira de escritório,Móveis,850.00,1,2024-03-01,Maria Oliveira,Norte
+86,Mesa de jantar,Móveis,1500.00,1,2024-04-10,Pedro Costa,Sudeste
+87,Webcam Full HD,Acessórios,280.00,1,2024-05-20,Ana Souza,Sul
+88,Caixa de som,Eletrônicos,190.00,1,2024-06-15,João Silva,Nordeste
+89,Impressora Multifuncional,Eletrônicos,950.00,1,2024-07-01,Maria Oliveira,Centro-Oeste
+90,Livro de Culinária,Livros,45.00,1,2024-08-05,Pedro Costa,Norte
+91,Geladeira Frost Free,Eletrodomésticos,3200.00,1,2024-09-01,Ana Souza,Sudeste
+92,Micro-ondas,Eletrodomésticos,450.00,1,2024-10-10,João Silva,Sul
+93,Ventilador,Eletrodomésticos,110.00,1,2024-11-05,Maria Oliveira,Sudeste
+94,Bicicleta de Montanha,Esportes,1100.00,1,2024-12-01,Pedro Costa,Nordeste
+95,Smartphone Pro,Eletrônicos,2500.00,1,2023-05-20,Ana Souza,Sul
+96,Notebook Ultra,Eletrônicos,5500.50,1,2023-06-01,João Silva,Centro-Oeste
+97,Monitor 4K,Eletrônicos,1800.00,1,2023-07-05,Maria Oliveira,Sudeste
+98,Mochila executiva,Acessórios,150.00,1,2023-08-10,Pedro Costa,Norte
+99,Carregador Portátil,Acessórios,90.00,1,2023-09-01,Ana Souza,Sudeste
+100,Câmera Digital,Eletrônicos,1200.00,1,2023-10-01,João Silva,Sul
