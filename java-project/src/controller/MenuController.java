@@ -1,6 +1,5 @@
 package controller;
 
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -18,6 +17,7 @@ public class MenuController {
 			menuText.append("\n====================================\n");
 			menuText.append("Selecione uma opção:\n");
 			menuText.append("[1] Total de vendas por categoria\n");
+			menuText.append("[2] Top 5 produtos mais vendidos\n");
 			menuText.append("[5] Sair.\n");
 			menuText.append("\nResposta: ");
 
@@ -30,6 +30,7 @@ public class MenuController {
 
 			switch (choice) {
 			case 1 -> SalesAnalysisController.displayTotalSalesByCategory(salesList);
+			case 2 -> SalesAnalysisController.displayTop5BestSellingProducts(salesList);
 			case 5 -> System.out.println("Programa encerrado.");
 			default -> System.out.println("Opção inválida!");
 			}
