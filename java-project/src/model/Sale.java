@@ -91,7 +91,7 @@ public class Sale {
 		this.region = region;
 	}
 	
-	public double totalValue () {
+	public double getTotalValue () {
 		return unitValue * quantity;
 	}
 
@@ -125,7 +125,7 @@ public class Sale {
 		text.append("Categoria : " + category + "\n");
 		text.append("Valor unitário: R$ " + String.format("%.2f", unitValue) + "\n");
 		text.append("Quantidade : " + quantity+ "\n");
-		text.append("Valor total: R$ " + String.format("%.2f", totalValue()) + "\n");
+		text.append("Valor total: R$ " + String.format("%.2f", getTotalValue()) + "\n");
 		text.append("Data: " + dateFormat.format(date) + "\n");
 		text.append("Vendedor: " + seller + "\n");
 		text.append("Região : " + region + "\n");
