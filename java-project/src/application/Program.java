@@ -3,6 +3,7 @@ package application;
 import java.util.List;
 import java.util.Scanner;
 
+import controller.MenuController;
 import model.Sale;
 import service.SalesListService;
 
@@ -15,7 +16,9 @@ public class Program {
 		List<Sale> salesList = SalesListService.getSalesList(sc);
 
 		salesList.forEach(System.out::println);
-
+		
+		MenuController.displayMenu(sc, salesList);
+		
 		sc.close();
 
 	}
