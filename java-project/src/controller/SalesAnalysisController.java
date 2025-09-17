@@ -12,7 +12,7 @@ public class SalesAnalysisController {
 	private static <K, V> void displayMap (Map<K, V> map, String title, String printMessage) {
 		
 		if (map.isEmpty()) {
-			System.out.println("Lista vazia!");
+			System.out.println("Nenhuma venda foi encontrada!");
 			
 		} else {
 			System.out.println(title);

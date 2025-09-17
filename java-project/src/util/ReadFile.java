@@ -10,12 +10,12 @@ import java.util.stream.Collectors;
 
 public class ReadFile {
 
-	public static <T> List<T> getListOfElements (String filePath, Function<String, T> operation) {
+	public static <T> List<T> getListOfElements (String filePath, Function<String, T> receivesStringReturnsObjectT) {
 
 		try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
 
 			return reader.lines()
-					.map(operation)
+					.map(receivesStringReturnsObjectT)
 					.collect(Collectors.toList());
 
 		} catch (IOException e) {

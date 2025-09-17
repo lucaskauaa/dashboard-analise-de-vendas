@@ -31,7 +31,7 @@ public class SalesAnalysisService {
 					Collectors.counting()
 					));
 		
-		return sortMapByValue(totalSalesByCategory, (e1, e2) -> e2.getValue().compareTo(e1.getValue()));
+		return sortMapByValue(totalSalesByCategory, Map.Entry.comparingByValue(Comparator.reverseOrder()));
 		 
 	}
 	
@@ -43,7 +43,7 @@ public class SalesAnalysisService {
 					Collectors.counting()
 					));
 		
-		return sortMapByValue(totalSalesByRegion, (s1, s2) -> s2.getValue().compareTo(s1.getValue()));
+		return sortMapByValue(totalSalesByRegion, Map.Entry.comparingByValue(Comparator.reverseOrder()));
 	
 	}
 	
@@ -57,7 +57,7 @@ public class SalesAnalysisService {
 		
 		return quantityOfEachProduct.entrySet()
 			.stream()
-			.sorted((e1, e2) -> e2.getValue().compareTo(e1.getValue()))
+			.sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
 			.limit(5)
 			.collect(Collectors.toMap(
 					Map.Entry::getKey,
@@ -75,7 +75,7 @@ public class SalesAnalysisService {
 					Collectors.averagingDouble(Sale::getTotalValue)
 					));
 		
-		return sortMapByValue(avarageValuePerSeller, (v1, v2) -> v2.getValue().compareTo(v1.getValue()));
+		return sortMapByValue(avarageValuePerSeller, Map.Entry.comparingByValue(Comparator.reverseOrder()));
 		
 	}
 	
@@ -87,7 +87,7 @@ public class SalesAnalysisService {
 					Collectors.summingDouble(Sale::getTotalValue)
 					));
 		
-		return sortMapByValue(valuePerSeller, (v1, v2) -> v2.getValue().compareTo(v1.getValue()));
+		return sortMapByValue(valuePerSeller, Map.Entry.comparingByValue(Comparator.reverseOrder()));
 		
 	}
 	
@@ -104,7 +104,7 @@ public class SalesAnalysisService {
 				percentageByCategory.put(category, percentage);
 			});
 		
-		return sortMapByValue(percentageByCategory, (v1, v2) -> v2.getValue().compareTo(v1.getValue()));
+		return sortMapByValue(percentageByCategory, Map.Entry.comparingByValue(Comparator.reverseOrder()));
 		
 	}
 	
