@@ -15,7 +15,7 @@ public class SalesAnalysisController {
 			
 		} else {
 			System.out.println(text01);
-			map.forEach((k, v) -> System.out.printf(text02, k, v)) ;
+			map.forEach((k, v) -> System.out.println(String.format(text02, k, v)));
 		}
 		
 	}
@@ -24,21 +24,21 @@ public class SalesAnalysisController {
 
 		Map<String, Long> totalSalesByCategory =  SalesAnalysisService.getTotalSalesByCategory(salesList);
 		
-		displayMap(totalSalesByCategory, "Total de vendas por categoria:\n", "%s: %d%n");
+		displayMap(totalSalesByCategory, "Total de vendas por categoria:\n", "%s: %d");
 	}
 	
 	public static void displayTotalSalesByRegion (List<Sale> salesList) {
 
 		Map<String, Long> totalSalesByRegion =  SalesAnalysisService.getTotalSalesByRegion(salesList);
 		
-		displayMap(totalSalesByRegion, "Total de vendas por região:\n", "%s: %d%n");
+		displayMap(totalSalesByRegion, "Total de vendas por região:\n", "%s: %d");
 	}
 
 	public static void displayTop5BestSellingProducts (List<Sale> salesList) {
 		
 		Map<String, Integer> bestSellingProducts = SalesAnalysisService.getTop5BestSellingProducts(salesList);
 		
-		displayMap(bestSellingProducts, "Top 5 produtos mais vendidos:\n", "%s: %d%n");
+		displayMap(bestSellingProducts, "Top 5 produtos mais vendidos:\n", "%s: %d");
 		
 	}
 	
@@ -46,7 +46,7 @@ public class SalesAnalysisController {
 		
 		Map<String, Double> averageValuePerSelling = SalesAnalysisService.getAverageValuePerSeller(salesList);
 		
-		displayMap(averageValuePerSelling, "Valor médio por vendedor:\n", "%s: R$ %.2f%n");
+		displayMap(averageValuePerSelling, "Valor médio por vendedor:\n", "%s: R$ %.2f");
 		
 	}
 	
@@ -54,7 +54,15 @@ public class SalesAnalysisController {
 		
 		Map<String, Double> totalValuePerSelling = SalesAnalysisService.getTotalValuePerSeller(salesList);
 		
-		displayMap(totalValuePerSelling, "Valor total por vendedor:\n", "%s: R$ %.2f%n");
+		displayMap(totalValuePerSelling, "Valor total por vendedor:\n", "%s: R$ %.2f");
+		
+	}
+	
+	public static void displayPercentageOfSalesByCategory (List<Sale> salesList) {
+		
+		Map<String, Integer> percentageOfSalesByCategory = SalesAnalysisService.getPercentageOfSalesByCategory(salesList);
+		
+		displayMap(percentageOfSalesByCategory, "Porcentagem de vendas por categoria:\n", "%s: %d%%");
 		
 	}
 	

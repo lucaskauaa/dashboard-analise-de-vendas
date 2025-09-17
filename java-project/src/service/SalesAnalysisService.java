@@ -31,9 +31,8 @@ public class SalesAnalysisService {
 					Collectors.counting()
 					));
 		
-		totalSalesByCategory = sortMapByValue(totalSalesByCategory, (e1, e2) -> e2.getValue().compareTo(e1.getValue()));
-	
-		return totalSalesByCategory;	 
+		return sortMapByValue(totalSalesByCategory, (e1, e2) -> e2.getValue().compareTo(e1.getValue()));
+		 
 	}
 	
 	public static Map<String, Long> getTotalSalesByRegion (List<Sale> salesList) {
@@ -44,9 +43,8 @@ public class SalesAnalysisService {
 					Collectors.counting()
 					));
 		
-		totalSalesByRegion = sortMapByValue(totalSalesByRegion, (s1, s2) -> s2.getValue().compareTo(s1.getValue()));
-		
-		return totalSalesByRegion;
+		return sortMapByValue(totalSalesByRegion, (s1, s2) -> s2.getValue().compareTo(s1.getValue()));
+	
 	}
 	
 	public static Map<String, Integer> getTop5BestSellingProducts (List<Sale> salesList) {
@@ -77,9 +75,8 @@ public class SalesAnalysisService {
 					Collectors.averagingDouble(Sale::getTotalValue)
 					));
 		
-		avarageValuePerSeller = sortMapByValue(avarageValuePerSeller, (v1, v2) -> v2.getValue().compareTo(v1.getValue()));
+		return sortMapByValue(avarageValuePerSeller, (v1, v2) -> v2.getValue().compareTo(v1.getValue()));
 		
-		return avarageValuePerSeller;
 	}
 	
 	public static Map<String, Double> getTotalValuePerSeller (List<Sale> salesList) {
@@ -87,12 +84,28 @@ public class SalesAnalysisService {
 		Map<String, Double> valuePerSeller = salesList.stream()
 			.collect(Collectors.groupingBy(
 					Sale::getSeller,
-					Collectors.summingDouble(s -> s.getTotalValue())
+					Collectors.summingDouble(Sale::getTotalValue)
 					));
 		
-		valuePerSeller = sortMapByValue(valuePerSeller, (v1, v2) -> v2.getValue().compareTo(v1.getValue()));
+		return sortMapByValue(valuePerSeller, (v1, v2) -> v2.getValue().compareTo(v1.getValue()));
 		
-		return valuePerSeller;
+	}
+	
+	public static Map<String, Integer> getPercentageOfSalesByCategory (List<Sale> salesList) {
+		
+		Map<String, Integer> percentageByCategory = new LinkedHashMap<>();
+		
+		salesList.stream()
+			.collect(Collectors.groupingBy(Sale::getCategory))
+			.forEach((category, currentList) -> {
+				
+				int percentage = currentList.size() * 100 / salesList.size();
+				
+				percentageByCategory.put(category, percentage);
+			});
+		
+		return sortMapByValue(percentageByCategory, (v1, v2) -> v2.getValue().compareTo(v1.getValue()));
+		
 	}
 	
 }

@@ -21,6 +21,7 @@ public class MenuController {
 			menuText.append("[3] Top 5 produtos mais vendidos\n");
 			menuText.append("[4] Valor médio por vendedor\n");
 			menuText.append("[5] Valor total por vendedor\n");
+			menuText.append("[6] Porcentagem de vendas por categoria\n");
 			menuText.append("[0] Sair.\n");
 			menuText.append("\nResposta: ");
 
@@ -37,6 +38,7 @@ public class MenuController {
 			case 3 -> SalesAnalysisController.displayTop5BestSellingProducts(salesList);
 			case 4 -> SalesAnalysisController.displayAverageValuePerSeller(salesList);
 			case 5 -> SalesAnalysisController.displayTotalValuePerSeller(salesList);
+			case 6 -> SalesAnalysisController.displayPercentageOfSalesByCategory(salesList);
 			case 0 -> System.out.println("Programa encerrado.");
 			default -> System.out.println("Opção inválida!");
 			}

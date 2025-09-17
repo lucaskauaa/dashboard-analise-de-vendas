@@ -20,7 +20,7 @@ public class Program {
 		MenuController.displayMenu(sc, salesList);
 		
 		sc.close();
-
+		
 	}
 
 }
