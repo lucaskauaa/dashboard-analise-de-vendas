@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import model.Sale;
+import util.InputReader;
 
 public class MenuController {
 	
@@ -25,11 +26,8 @@ public class MenuController {
 			menuText.append("[7] Vendas por mês e ano\n");
 			menuText.append("[0] Sair.\n");
 			menuText.append("\nResposta: ");
-
-			System.out.print(menuText.toString());
 			
-			choice = sc.nextInt();
-			sc.nextLine();
+			choice = InputReader.readInt(sc, menuText.toString());
 			
 			System.out.println();
 

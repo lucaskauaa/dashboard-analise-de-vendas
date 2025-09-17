@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import model.Sale;
+import util.InputReader;
 import util.ReadFile;
 
 public class SalesListService {
@@ -32,12 +33,13 @@ public class SalesListService {
 		boolean repeat;
 
 		do {
-			System.out.print("Insira o caminho do arquivo: ");
-			String filePath = sc.nextLine();
+			
+			String filePath = InputReader.readString(sc, "Insira o caminho do arquivo: ");
 
 			salesList = ReadFile.getListOfElements(filePath, SalesListService::receivesStringReturnsSale);
 
 			repeat = salesList.isEmpty();
+			
 		} while (repeat);
 		
 		return salesList;

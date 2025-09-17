@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import model.Sale;
 import service.SalesAnalysisService;
+import util.InputReader;
 
 public class SalesAnalysisController {
 	
@@ -83,13 +84,9 @@ public class SalesAnalysisController {
 		
 		displayList(salesDate, "Não foram encontradas nenhuma ocorrência de vendas!", "Meses onde ocorreram vendas:\n");
 		
-		System.out.print("\nDigite o ano que você deseja consultar: ");
-		int year = sc.nextInt();
-		sc.nextLine();
+		int year = InputReader.readInt(sc, "\nDigite o ano que você deseja consultar: ");
 		
-		System.out.print("Digite o mês que você deseja consultar: ");
-		int month = sc.nextInt();
-		sc.nextLine();
+		int month = InputReader.readInt(sc, "Digite o mês que você deseja consultar: ");
 		
 		List<Sale> salesByMonthAndYear = SalesAnalysisService.getSalesByMonthAndYear(salesList, year, month);
 		
