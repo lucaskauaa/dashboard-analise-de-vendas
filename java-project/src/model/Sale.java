@@ -119,7 +119,7 @@ public class Sale {
 		
 		StringBuilder text = new StringBuilder();
 		
-		text.append("Venda:\n");
+		text.append("\nVenda:\n");
 		text.append("id: " + id + "\n");
 		text.append("Produto : " + product + "\n");
 		text.append("Categoria : " + category + "\n");
@@ -128,10 +128,9 @@ public class Sale {
 		text.append("Valor total: R$ " + String.format("%.2f", getTotalValue()) + "\n");
 		text.append("Data: " + dateFormat.format(date) + "\n");
 		text.append("Vendedor: " + seller + "\n");
-		text.append("Região : " + region + "\n");
+		text.append("Região : " + region);
 		
 		return text.toString();
 	}
-	
 	
 }

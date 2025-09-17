@@ -2,22 +2,33 @@ package controller;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 import model.Sale;
 import service.SalesAnalysisService;
 
 public class SalesAnalysisController {
 	
-	private static <K, V> void displayMap (Map<K, V> map, String text01, String text02) {
+	private static <K, V> void displayMap (Map<K, V> map, String title, String printMessage) {
 		
 		if (map.isEmpty()) {
 			System.out.println("Lista vazia!");
 			
 		} else {
-			System.out.println(text01);
-			map.forEach((k, v) -> System.out.println(String.format(text02, k, v)));
+			System.out.println(title);
+			map.forEach((k, v) -> System.out.println(String.format(printMessage, k, v)));
 		}
 		
+	}
+	
+	private static <T> void displayList (List<T> list, String emptyListMessage, String title) {
+		
+		if (list.isEmpty()) {
+			System.out.println(emptyListMessage);
+		} else {
+			System.out.println(title);
+			list.forEach(System.out::println);
+		}
 	}
 
 	public static void displayTotalSalesByCategory (List<Sale> salesList) {
@@ -64,6 +75,29 @@ public class SalesAnalysisController {
 		
 		displayMap(percentageOfSalesByCategory, "Porcentagem de vendas por categoria:\n", "%s: %d%%");
 		
+	}
+	
+	public static void displaySalesByMonthAndYear (Scanner sc, List<Sale> salesList) {
+		
+		List<String> salesDate = SalesAnalysisService.getSalesDate(salesList);
+		
+		displayList(salesDate, "Não foram encontradas nenhuma ocorrência de vendas!", "Meses onde ocorreram vendas:\n");
+		
+		System.out.print("\nDigite o ano que você deseja consultar: ");
+		int year = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.print("Digite o mês que você deseja consultar: ");
+		int month = sc.nextInt();
+		sc.nextLine();
+		
+		List<Sale> salesByMonthAndYear = SalesAnalysisService.getSalesByMonthAndYear(salesList, year, month);
+		
+		displayList(
+				salesByMonthAndYear,
+				"\nNão foram encontradas nenhuma ocorrência de vendas nesta data!\nInsira uma data válida!",
+				"\nVendas em " + month + "/" + year + ":"
+				);
 	}
 	
 }

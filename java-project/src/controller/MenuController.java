@@ -16,12 +16,13 @@ public class MenuController {
 
 			menuText.append("\n====================================\n");
 			menuText.append("Selecione uma opção:\n");
-			menuText.append("[1] Total de vendas por categoria\n");
+			menuText.append("\n[1] Total de vendas por categoria\n");
 			menuText.append("[2] Total de vendas por região\n");
 			menuText.append("[3] Top 5 produtos mais vendidos\n");
 			menuText.append("[4] Valor médio por vendedor\n");
 			menuText.append("[5] Valor total por vendedor\n");
 			menuText.append("[6] Porcentagem de vendas por categoria\n");
+			menuText.append("[7] Vendas por mês e ano\n");
 			menuText.append("[0] Sair.\n");
 			menuText.append("\nResposta: ");
 
@@ -39,6 +40,7 @@ public class MenuController {
 			case 4 -> SalesAnalysisController.displayAverageValuePerSeller(salesList);
 			case 5 -> SalesAnalysisController.displayTotalValuePerSeller(salesList);
 			case 6 -> SalesAnalysisController.displayPercentageOfSalesByCategory(salesList);
+			case 7 -> SalesAnalysisController.displaySalesByMonthAndYear(sc, salesList);
 			case 0 -> System.out.println("Programa encerrado.");
 			default -> System.out.println("Opção inválida!");
 			}

@@ -108,4 +108,18 @@ public class SalesAnalysisService {
 		
 	}
 	
+	public static List<String> getSalesDate (List<Sale> salesList) {
+		
+		return salesList.stream()
+			.map(s -> s.getDate().getMonthValue() + "/" + s.getDate().getYear())
+			.distinct()
+			.collect(Collectors.toList());
+	}
+	
+	public static List<Sale> getSalesByMonthAndYear (List<Sale> salesList, Integer year, Integer month) {
+		
+		return salesList.stream()
+			.filter(s -> s.getDate().getYear() == year && s.getDate().getMonthValue() == month)
+			.collect(Collectors.toList());
+	}
 }
