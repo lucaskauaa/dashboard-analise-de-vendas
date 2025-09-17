@@ -13,7 +13,7 @@ public class SalesListService {
 	
 	private static Sale receivesStringReturnsSale (String line) {
 		String[] fields = line.split(",");
-
+		
 		return new Sale(
 				Integer.parseInt(fields[0]),
 				fields[1],
@@ -23,7 +23,7 @@ public class SalesListService {
 				LocalDate.parse(fields[5]),
 				fields[6],
 				fields[7]
-		);
+				);
 	}
 
 	public static List<Sale> getSalesList (Scanner sc) {

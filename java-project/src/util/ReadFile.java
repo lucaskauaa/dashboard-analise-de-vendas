@@ -2,7 +2,6 @@ package util;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
@@ -18,11 +17,13 @@ public class ReadFile {
 					.map(receivesStringReturnsObjectT)
 					.collect(Collectors.toList());
 
-		} catch (IOException e) {
-			System.out.println("Url incorreta!\n");
+		} catch (Exception e) {
+			
+			System.out.println("\nUrl incorreta, ou arquivo fora de padrão!\n");
+			System.out.println(e.getMessage() + "\n");
 			
 			return Collections.emptyList();
-		}
+		} 
 
 	}
 
