@@ -34,7 +34,7 @@ public class SalesListService {
 
 		do {
 			
-			String filePath = InputReader.readString(sc, "Insira o caminho do arquivo: ");
+			String filePath = InputReader.readString(sc, "Insira o caminho do arquivo de texto contendo a lista de vendas: ");
 
 			salesList = ReadFile.getListOfElements(filePath, SalesListService::receivesStringReturnsSale);
 
