@@ -24,6 +24,7 @@ public class MenuController {
 			menuText.append("[5] Valor total por vendedor\n");
 			menuText.append("[6] Porcentagem de vendas por categoria\n");
 			menuText.append("[7] Vendas por mês e ano\n");
+			menuText.append("[8] Gerar arquivo de texto com relatório completo\n");
 			menuText.append("[0] Sair.\n");
 			menuText.append("\nResposta: ");
 			
@@ -39,6 +40,7 @@ public class MenuController {
 			case 5 -> SalesAnalysisController.displayTotalValuePerSeller(salesList);
 			case 6 -> SalesAnalysisController.displayPercentageOfSalesByCategory(salesList);
 			case 7 -> SalesAnalysisController.displaySalesByMonthAndYear(sc, salesList);
+			case 8 -> FileGenerationController.generateFile(sc, salesList);
 			case 0 -> System.out.println("Programa encerrado.");
 			default -> System.out.println("Opção inválida!");
 			}

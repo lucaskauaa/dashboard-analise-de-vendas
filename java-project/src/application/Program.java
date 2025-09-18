@@ -14,8 +14,6 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 
 		List<Sale> salesList = SalesListService.getSalesList(sc);
-
-		salesList.forEach(System.out::println);
 		
 		MenuController.displayMenu(sc, salesList);
 		
