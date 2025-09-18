@@ -41,18 +41,21 @@ File → Switch Workspace → Other... → Browse → selecionar a pasta dashboa
 ```
 
 3. Importe o projeto no Eclipse:  
-   ```
-   File → Import → General → Existing Projects into Workspace → Next → Browse → selecionar a pasta dashboard-analise-de-vendas → Finish
-   ```
+```
+File → Import → General → Existing Projects into Workspace → Next → Browse → selecionar a pasta dashboard-analise-de-vendas → Finish
+```
 
 4. Acesse o arquivo `src/application/Program.java` e pressione **F11** para executar.  
+
+### Arquivo .csv
+O arquivo .csv contendo a lista de vendas utilizado nos exemplos está disponível na pasta java-project/text/products.txt
 
 ## 🧪 Exemplos de Uso
 
 ### Leitura de arquivo .csv com lista vendas
 
 ```
-Insira o caminho do arquivo .csv com a lista de vendas: C:\Documents\products.txt
+Insira o caminho do arquivo de texto contendo a lista de vendas: C:\Documents\products.txt
 
 ```
 
@@ -243,15 +246,25 @@ text/
 ### 🔍 Descrição das principais classes
 
 - `Program.java`: Classe principal que inicia o programa.
+  
 - `FileGenerationController.java`: Controla a interação com o usuário após ele selecionar a opção de gerar arquivo de texto.
+  
 - `MenuController.java`: Controla a interação com o usuário via console durante toda a execução do programa.
+  
 - `SalesAnalysisControler.java`: Controla a saída dos dados no console.
+  
 - `Sale.java`: Classe responsável por representar uma venda, contendo atributo como id, produto, data, vendedor, etc.
+  
 - `SalesAnalysisService.java`: Responsável pelo processamento dos dados e geração dos relatórios.
+  
 - `SalesListService.java`: Responsável pela lógica de gerar objetos do tipo venda.
+  
 - `InputReader.java`: Lida com a entrada de dados do usuário no console.
+  
 - `ReadFile.java`: Reponsável por ler os dados do arquivo .csv e retornar uma lista de objetos do tipo venda.
+  
 - `WriteFile.java`: Contém a lógica de escrita de relatório em arquivo .txt.
+  
 - `text/products.txt`: Contém o arquivo .csv utilizado nos exemplos.
 
 ## 🧑‍💻 Autor
